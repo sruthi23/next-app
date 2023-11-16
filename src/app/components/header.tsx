@@ -1,4 +1,4 @@
-const links = ['Home']
+const links = ['Menu']
 
 import Image from 'next/image'
 export default function Header() {
