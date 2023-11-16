@@ -1,41 +1,38 @@
 import Image from 'next/image'
 export default function Home() {
   return (
-    <div className="flex flex-col lg:flex-row">
-      <div className="flex-1">
-        <Image
-          src="/kayan-baby-04ZMnFOPRdQ-unsplash.jpg" // Path to your image inside the "public" folder
-          alt="Description of your image"
-          width={800}
-          height={700}
-        />
-      </div>
-
-      <div className="flex-1 flex-col lg:flex-row ml-24 flex-wrap">
-        <div className="flex-1 lg:pl-20 pl-10 py-20 text-5xl font-light text-left font-serif">
-          <p>Coming Soon</p>
+    <>
+      <div className="grid grid-rows-2 lg:grid-cols-2 bg-gray-100">
+        <div>
+          <Image
+            src="/kayan-baby-04ZMnFOPRdQ-unsplash.jpg" // Path to your image inside the "public" folder
+            alt="Description of your image"
+            width={900}
+            height={800}
+          />
         </div>
-        <div className="flex flex-col md:flex-row py-4 mr-28 flex-wrap">
-          <div className="flex-1 py-10">
-            <Image
-              src="/danie-franco-NV_IPwv0Saw-unsplash.jpg" // Path to your image inside the "public" folder
-              alt="Description of your image"
-              width={200}
-              height={100}
-              className="max-w-sm mx-auto"
-            />
-          </div>
-          <div className="mr-28">
-            <Image
-              src="/annie-spratt-aRJGeiWYxX8-unsplash.jpg" // Path to your image inside the "public" folder
-              alt="Description of your image"
-              width={200}
-              height={100}
-              className="max-w-sm mx-auto"
-            />
+        <div className="py-16 md:content-center lg:py-10">
+          <p className="text-center text-lg py-10">Coming Soon</p>
+          <div className="flex gap-2 lg:py-18 lg:gap-8">
+            <div className="py-8 pl-2 lg:pl-32 lg:py-14">
+              <Image
+                src="/danie-franco-NV_IPwv0Saw-unsplash.jpg" // Path to your image inside the "public" folder
+                alt="Description of your image"
+                width={200}
+                height={200}
+              />
+            </div>
+            <div>
+              <Image
+                src="/annie-spratt-aRJGeiWYxX8-unsplash.jpg" // Path to your image inside the "public" folder
+                alt="Description of your image"
+                width={200}
+                height={200}
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
